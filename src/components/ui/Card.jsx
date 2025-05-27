@@ -1,7 +1,7 @@
 import { cn } from "../../utils";
 
 export function Card({ className, ...props }) {
-	return <div className={cn("rounded-lg border bg-background text-card-foreground", className)} {...props} />;
+	return <div className={cn("rounded-lg border shadow bg-background text-card-foreground", className)} {...props} />;
 }
 
 export function CardHeader({ className, ...props }) {

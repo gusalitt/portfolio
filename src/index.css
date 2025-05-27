@@ -14,7 +14,7 @@
 @layer base {
 	:root {
 		--background: #ffffff;
-		--overlay : rgba(0, 0, 0, 0.06);
+		--overlay: rgba(0, 0, 0, 0.05);
 		--foreground: #1a1a1a;
 
 		--card: #f3f4f6;
@@ -39,7 +39,7 @@
 		--destructive-foreground: #ffffff;
 
 		--border: #e2e8f0;
-		--input: #e2e8f0;
+		--input: #bac1cc;
 		--ring: #cbd5e0;
 
 		--radius: 0.5rem;
@@ -47,7 +47,7 @@
 
 	.dark {
 		--background: #000000;
-		--overlay : rgba(255, 255, 255, 0.07);
+		--overlay: rgba(255, 255, 255, 0.09);
 		--foreground: #f9f9f9;
 
 		--card: #121417;
@@ -105,11 +105,11 @@
 	* {
 		@apply border-border;
 	}
-	body, header {
+	section {
 		background-color: var(--background);
 		background-image: 
-			repeating-linear-gradient(0deg, var(--overlay), var(--overlay) 1px, transparent 1px, transparent 32px),
-			repeating-linear-gradient(90deg, var(--overlay), var(--overlay) 1px, transparent 1px, transparent 32px);
+			repeating-linear-gradient(to bottom, var(--overlay),transparent 1px, transparent 1px, transparent 32px),
+			repeating-linear-gradient(to right, var(--overlay), transparent 1px, transparent 1px, transparent 32px);
 	}
 }
 
@@ -120,10 +120,6 @@
 
 	.section-padding {
 		@apply py-20 md:py-24;
-	}
-
-	.gradient-text {
-		@apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/40  dark:to-primary/10;
 	}
 
 	.gradient-bg {

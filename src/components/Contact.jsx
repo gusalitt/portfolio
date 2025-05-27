@@ -35,7 +35,7 @@ export default function Contact() {
 					{/* Header */}
 					<div className="text-center mb-12">
 						<h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
-						<p className="text-lg text-muted-foreground max-w-2xl mx-auto">Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life,</p>
+						<p className="text-muted-foreground max-w-2xl mx-auto">Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life,</p>
 					</div>
 
 					{/* Main Contact Info */}

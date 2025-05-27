@@ -9,7 +9,7 @@ export default function Footer() {
 				<div className="flex flex-col items-center text-center">
 					{/* Brand */}
 					<HashLink to="/#home" className="font-bold text-xl">
-						<span>Gus Alit | Personal Website</span>
+						<span>Gus Alit | Portfolio</span>
 					</HashLink>
                     <p className="text-sm text-muted-foreground mb-10 mt-2">A passionate full stack developer creating modern web experiences with cutting-edge technologies.</p>
 

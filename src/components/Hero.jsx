@@ -4,17 +4,17 @@ import { ArrowRight, Github, Linkedin, UserRoundPen } from "lucide-react";
 
 export default function Hero() {
 	return (
-		<section id="home" className="section-padding flex items-center md:pt-40">
+		<section id="home" className="section-padding flex items-center pt-[8.5rem] md:pt-40">
 			<div className="container">
 				<div className="max-w-4xl mx-auto text-center pt-9">
 					<p className="text-primary/20 italic text-sm mt-2 mb-6 tracking-wide">"Learn, Build, Improve"</p>
 					<h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-						<div className="gradient-text">
+						<div>
 							Full Stack Developer
 							<div className="pb-3">Keep Learning, Always Building</div>
 						</div>
 					</h1>
-					<p className="text-lg md:text-xl text-muted-foreground mb-8">Passionate about building better web apps every day — crafting clean, responsive experiences that keep evolving through learning and improvement.</p>
+					<p className="text-md md:text-xl text-muted-foreground mb-8">Passionate about building better web apps every day — crafting clean, responsive experiences that keep evolving through learning and improvement.</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
 						<Button asChild size="lg">
 							<HashLink to="#projects" smooth className="text-primary">
