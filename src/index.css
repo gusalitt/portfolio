@@ -14,7 +14,7 @@
 @layer base {
 	:root {
 		--background: #ffffff;
-		--overlay: rgba(0, 0, 0, 0.05);
+		--overlay: rgba(0, 0, 0, 0.08);
 		--foreground: #1a1a1a;
 
 		--card: #f3f4f6;
@@ -23,7 +23,7 @@
 		--popover: #f9f9f9;
 		--popover-foreground: #1a1a1a;
 
-		--primary: #1a1a1a;
+		--primary: #000000;
 		--primary-foreground: #ffffff;
 
 		--secondary: #e2e8f0;
@@ -47,7 +47,7 @@
 
 	.dark {
 		--background: #000000;
-		--overlay: rgba(255, 255, 255, 0.09);
+		--overlay: rgba(255, 255, 255, 0.1);
 		--foreground: #f9f9f9;
 
 		--card: #121417;
@@ -56,7 +56,7 @@
 		--popover: #1a202c;
 		--popover-foreground: #f9f9f9;
 
-		--primary: #d1d1d1;
+		--primary: #ffffff;
 		--primary-foreground: #f9f9f9;
 
 		--secondary: #4a5568;
