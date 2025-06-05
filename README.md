@@ -25,7 +25,7 @@ Menampilkan beberapa proyek, eksperimen, dan hal-hal yang dipelajari sepanjang p
 ## 📦 Cara Instalasi
 
 ```bash
-git clone https://github.com/gusalit/portfolio.git
+git clone https://github.com/gusalitt/portfolio.git
 cd portfolio
 npm install
 npm run dev
