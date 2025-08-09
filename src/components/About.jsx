@@ -30,7 +30,7 @@ export default function About() {
 			<div className="container lg:px-28">
 				<div className="flex flex-col justify-center items-center gap-10 mb-12">
 					<div className="flex items-center justify-center">
-						<div className="relative w-[350px] h-[350px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden shadow-lg">
+						<div className="relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden shadow-lg">
 							<img src="./about.png" alt="Developer working" className="w-full h-full object-cover" />
 						</div>
 					</div>

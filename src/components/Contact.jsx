@@ -12,7 +12,7 @@ export default function Contact() {
 			icon: <FileText size={24} />,
 			name: "Resume",
 			value: "Download Resume",
-			link: "./CV_IdaBagusAlitBhadraYoga_PKL.pdf",
+			link: "./CV-GusAlit-PKL.pdf",
 		},
 		{
 			icon: <MapPin size={24} />,

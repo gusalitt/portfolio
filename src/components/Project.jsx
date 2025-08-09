@@ -4,6 +4,13 @@ import Badge from "./ui/Badge";
 export default function Project() {
 	const projects = [
 		{
+			name: "LibraryHub (JavaScript Version)",
+			description: "A modern library management web app built with the JavaScript stack, providing book browsing, reading, and management features with an improved UI and responsive design.",
+			image: "https://raw.githubusercontent.com/gusalitt/libraryhub/main/client/public/preview.png",
+			link: "https://github.com/gusalitt/libraryhub",
+			tags: ["React", "Express", "Supabase (PostgreSQL)", "Tailwind CSS", "Node.js"],
+		},
+		{
 			name: "HydroWash Laundry System",
 			description: "Team project focused on managing laundry services and tracking order status. I contributed as a backend developer.",
 			image: "https://raw.githubusercontent.com/Malvin555/HydroWash/master/public/img/preview.png", // Replace with actual screenshot
@@ -18,7 +25,7 @@ export default function Project() {
 			tags: ["CodeIgniter", "Tailwind CSS", "MySQL"],
 		},
 		{
-			name: "Library App",
+			name: "Library App (PHP Version)",
 			description: "A Simple Library system designed to handle book management, borrowing, and return tracking through a simple web interface.",
 			image: "https://raw.githubusercontent.com/gusalitt/Aplikasi-Perpustakaan/main/admin/assets/img/home_admin.png",
 			link: "https://github.com/gusalitt/Aplikasi-Perpustakaan",

@@ -47,7 +47,7 @@
 
 	.dark {
 		--background: #000000;
-		--overlay: rgba(255, 255, 255, 0.1);
+		--overlay: rgba(255, 255, 255, 0.105);
 		--foreground: #f9f9f9;
 
 		--card: #121417;
