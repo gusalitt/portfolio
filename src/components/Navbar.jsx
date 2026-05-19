@@ -29,7 +29,7 @@ export default function Navbar() {
 			<header className={"fixed top-0 z-40 w-full border-b border-border bg-background " + backdropClass} style={{ backdropFilter: !mobileMenuOpen ? "blur(8px)" : "none" }}>
 				<div className="container flex h-16 items-center justify-between px-4 lg:px-20">
 					<div className="flex items-center gap-2">
-						<HashLink to={"#home"} className="font-bold text-2xl">
+						<HashLink to={"#home"} smooth className="font-bold text-2xl">
 							<span>Gus Alit</span>
 						</HashLink>
 					</div>

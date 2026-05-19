@@ -4,7 +4,7 @@ import { ArrowRight, Github, Linkedin, UserRoundPen } from "lucide-react";
 
 export default function Hero() {
 	return (
-		<section id="home" className="section-padding flex items-center pt-[8.5rem] md:pt-40">
+		<section id="home" className="section-padding flex items-center pt-[8.5rem] md:pt-45">
 			<div className="container">
 				<div className="max-w-4xl mx-auto text-center pt-9">
 					<p className="text-primary/20 italic text-sm mt-2 mb-6 tracking-wide">"Learn, Build, Improve"</p>
