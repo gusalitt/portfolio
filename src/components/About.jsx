@@ -35,26 +35,29 @@ export default function About() {
 						</div>
 					</div>
 
-					<div className="flex items-center justify-center text-center max-w-5xl mx-auto">
+					<div className="flex items-center justify-center text-center max-w-[60rem] mx-auto">
 						<div>
 							<p className="text-muted-foreground mb-4">
-								Hi, I’m <span className="font-bold text-foreground">Gus Alit</span>. I’m a student studying Software Engineering at SMK and I really like web development.
+								Hi, I’m <span className="font-bold text-foreground">Gus Alit</span>. I'm a Software and Game Development graduate from a vocational high school and I really like software development.
 							</p>
 							<p className="text-muted-foreground mb-4">
 								It all started with my curiosity, which grew into a passion for making easy-to-use, efficient, and nice-looking apps. I’m always excited to learn new things and improve my skills to keep up with changes in web technology.
 							</p>
-							<p className="text-muted-foreground">
+							<p className="text-muted-foreground mb-4">
 								I care about writing clean and easy-to-understand code, and I want to build smooth experiences for users. I combine my technical skills with creative thinking to make useful and good-quality solutions.
+							</p>
+							<p className="text-muted-foreground">
+								Here are some of the areas I specialize in:
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 					{skills.map((skill, index) => (
 						<Card key={index}>
 							<CardContent key={index} className="flex flex-col items-center text-center">
 								<div className="bg-primary/10 p-3 rounded-full mb-4">{skill.icon}</div>
-								<h3 className="font-medium mb-2">{skill.name}</h3>
+								<strong className="font-medium mb-2">{skill.name}</strong>
 								<p className="text-sm text-muted-foreground">{skill.desc}</p>
 							</CardContent>
 						</Card>

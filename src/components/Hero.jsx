@@ -28,14 +28,14 @@ export default function Hero() {
 						</Button>
 					</div>
 					<div className="flex justify-center gap-4">
-						<Button asChild variant="ghost" size="icon">
+						<Button asChild variant="ghost" size="icon" className="shadow">
 							<a href="https://github.com/gusalitt" target="_blank" rel="noopener noreferrer">
 								<Github size={20} />
 								<span className="sr-only">Github</span>
 							</a>
 						</Button>
-						<Button asChild variant="ghost" size="icon">
-							<a href="https://www.linkedin.com/in/idabagusalitbhadrayoga/" target="_blank" rel="noopener noreferrer">
+						<Button asChild variant="ghost" size="icon" className="shadow">
+							<a href="https://www.linkedin.com/in/gusalit" target="_blank" rel="noopener noreferrer">
 								<Linkedin size={20} />
 								<span className="sr-only">LinkedIn</span>
 							</a>

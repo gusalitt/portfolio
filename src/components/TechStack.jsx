@@ -1,7 +1,7 @@
 import { Card, CardContent } from "./ui/Card";
 
-export default function Skill() {
-	const skills = [
+export default function TechStack() {
+	const techStack = [
 		{ name: "HTML5", icon: "devicon-html5-plain colored" },
 		{ name: "CSS3", icon: "devicon-css3-plain colored" },
 		{ name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
@@ -23,21 +23,14 @@ export default function Skill() {
 	];
 
 	return (
-		<section id="skills" className="section-padding">
+		<section id="techStack" className="section-padding">
 			<div className="container lg:px-28 flex justify-content-center flex-col items-center">
 				<div className="max-w-3xl mx-auto text-center mb-12">
-					<h2 className="text-3xl font-bold mb-4">Skills & Technologies</h2>
-					<p className="text-muted-foreground">I've worked with a variety of technologies and frameworks to create modern web applications.</p>
+					<h2 className="text-3xl font-bold mb-4">Tech Stack</h2>
+					<p className="text-muted-foreground">Technologies and tools I use to build modern, scalable, and user-focused web applications.</p>
 				</div>
-				{/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"> */}
-				<div className="flex flex-wrap w-full md:w-[70%] items-center justify-center gap-16">
-					{skills.map((skill, index) => (
-						// <Card key={index} className="hover-lift">
-						// 	<CardContent key={index} className="p-6 flex flex-col items-center text-center">
-						// 		<i className={`${skill.icon} text-4xl mb-3`}></i>
-						// 		<h3 className="font-medium text-sm">{skill.name}</h3>
-						// 	</CardContent>
-						// </Card>
+				<div className="flex flex-wrap w-full md:w-[80%] items-center justify-center gap-14">
+					{techStack.map((skill, index) => (
 						<div className="flex flex-col justify-content-center items-center">
 							<i className={`${skill.icon} text-5xl mb-3`}></i>
 							<h3 className="font-medium text-sm">{skill.name}</h3>

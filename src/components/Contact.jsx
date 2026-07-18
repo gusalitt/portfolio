@@ -12,7 +12,7 @@ export default function Contact() {
 			icon: <FileText size={24} />,
 			name: "Resume",
 			value: "Download Resume",
-			link: "./cv-gusalit.pdf",
+			link: "https://res.cloudinary.com/x17drr8r/image/upload/v1783706438/ida-bagus-alit-bhadra-yoga-resume.pdf",
 		},
 		{
 			icon: <MapPin size={24} />,
@@ -24,7 +24,7 @@ export default function Contact() {
 
 	const socialLinks = [
 		{ icon: <Github size={24} />, name: "GitHub", link: "https://github.com/gusalitt" },
-		{ icon: <Linkedin size={24} />, name: "LinkedIn", link: "https://www.linkedin.com/in/idabagusalitbhadrayoga/" },
+		{ icon: <Linkedin size={24} />, name: "LinkedIn", link: "https://www.linkedin.com/in/gusalit/" },
 		{ icon: <Instagram size={24} />, name: "Instagram", link: "https://www.instagram.com/tugus_alitt/" },
 	];
 
@@ -47,7 +47,7 @@ export default function Contact() {
 									href={contact.link}
 									target="_blank"
 									rel={contact.link.startsWith("http") ? "noopener noreferrer" : undefined}
-									className="w-full group flex flex-col justify-center items-center text-center p-6 rounded-xl hover:bg-muted/50 transition-all duration-300"
+									className="w-full group flex flex-col justify-center items-center text-center py-6 px-8 rounded-xl hover:bg-muted/50 transition-all duration-300"
 								>
 									<div className="bg-muted/60 group-hover:bg-muted p-4 rounded-full mb-4 transition-colors">{contact.icon}</div>
 									<h3 className="font-semibold text-lg mb-2">{contact.name}</h3>

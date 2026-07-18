@@ -16,10 +16,10 @@ export default function Footer() {
 					{/* Copyright & Credits */}
 					<div className="flex flex-col sm:flex-row items-center gap-2 text-sm text-muted-foreground">
 						<span>© {currentYear} All rights reserved.</span>
-						<span className="hidden sm:inline">•</span>
+						{/* <span className="hidden sm:inline">•</span>
 						<div className="flex items-center gap-1">
 							<span>Made Using React & Tailwind</span>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

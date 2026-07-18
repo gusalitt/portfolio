@@ -1,19 +1,19 @@
 # Gus Alit - Portfolio
 
-Menampilkan beberapa proyek, eksperimen, dan hal-hal yang dipelajari sepanjang perjalanan dalam pengembangan web. Dibuat dengan pendekatan sederhana dan fokus pada pengalaman pengguna yang baik.
+Showcasing a selection of projects, experiments and lessons learnt throughout my journey in web development. Created with a simple approach and a focus on a good user experience.
 
 ---
 
-## 🚀 Fitur
+## Feature
 
-- Desain responsif untuk desktop, tablet, dan mobile
-- Dibangun menggunakan React JS dan Vite
-- Kode bersih dan mudah dipelihara
-- Fokus pada tampilan yang ringan dan intuitif
+- Responsive design for desktop, tablet and mobile
+- Built using React JS and Vite
+- Clean and easy-to-maintain code
+- Focus on a lightweight and intuitive user interface
 
 ---
 
-## 🛠 Teknologi yang Digunakan
+## Technology Used
 
 ![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
@@ -22,25 +22,13 @@ Menampilkan beberapa proyek, eksperimen, dan hal-hal yang dipelajari sepanjang p
 
 ---
 
-## 📦 Cara Instalasi
+## Installation Instructions
 
 ```bash
 git clone https://github.com/gusalitt/portfolio.git
 cd portfolio
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ---
-
-## 🤝 Kontribusi
-
-Kontribusi sangat terbuka! Jika kamu ingin menambahkan fitur, memperbaiki bug, atau meningkatkan dokumentasi:
-
-1. Fork repositori ini
-2. Buat branch fitur (`git checkout -b fitur-anda`)
-3. Commit perubahan Anda (`git commit -m 'Menambahkan fitur X'`)
-4. Push ke branch (`git push origin fitur-anda`)
-5. Buat Pull Request
-
-Terima kasih telah berkontribusi! 🙌

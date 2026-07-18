@@ -11,8 +11,8 @@ const buttonVariants = {
 
 const buttonSizes = {
 	default: "h-10 px-4 py-2",
-	sm: "h-9 rounded-md px-3",
-	lg: "h-11 rounded-md px-8",
+	sm: "h-9 rounded-xl px-3",
+	lg: "h-11 rounded-xl px-8",
 	icon: "h-10 w-10",
 };
 
@@ -22,7 +22,7 @@ export default function Button({ className, variant = "default", size = "default
 	if (asChild) {
 		return React.cloneElement(children, {
 			className: cn(
-				"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cusor-pointer",
+				"inline-flex items-center justify-center rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cusor-pointer",
 				buttonVariants[variant],
 				buttonSizes[size],
 				className
@@ -34,7 +34,7 @@ export default function Button({ className, variant = "default", size = "default
 	return (
 		<button
 			className={cn(
-				"inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
+				"inline-flex items-center justify-center rounded-xl text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cursor-pointer",
 				buttonVariants[variant],
 				buttonSizes[size],
 				className

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./ui/Card";
 import Badge from "./ui/Badge";
+import Button from "./ui/Button";
 
 export default function Project() {
 	const projects = [
@@ -43,7 +44,7 @@ export default function Project() {
 			name: "Library App (PHP Version)",
 			description: "A Simple Library system designed to handle book management, borrowing, and return tracking through a simple web interface.",
 			image: "https://raw.githubusercontent.com/gusalitt/Aplikasi-Perpustakaan/refs/heads/main/admin/assets/img/home_admin.png",
-			link: "https://github.com/gusalitt/Aplikasi-Perpustakaan",
+			link: "https://github.com/gusalitt/library-app",
 			tags: ["PHP Native", "CSS", "MySQL"],
 		},
 	];
@@ -74,14 +75,17 @@ export default function Project() {
 								<p className="text-muted-foreground mb-4 leading-relaxed text-sm md:text-base">{project.description}</p>
 								<div className="flex flex-wrap gap-2 mb-4">
 									{project.tags.map((tag, idx) => (
-										<Badge key={idx} variant="outline" className="border-primary/30 text-xs md:text-sm">
+										<Badge key={idx} variant="secondary" className="border-primary/30 text-xs md:text-sm">
 											{tag}
 										</Badge>
 									))}
 								</div>
-								<a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary font-medium group-hover:gap-2 transition-all">
-									View Project <span className="ml-1 group-hover:ml-2 transition-all">→</span>
-								</a>
+
+								<Button asChild className="w-max text-sm" variant="outline" size="sm">
+									<a href={project.link} target="_blank" rel="noopener noreferrer">
+										View Project <span className="ml-1"> →</span>
+									</a>
+								</Button>
 							</CardContent>
 						</Card>
 					))}

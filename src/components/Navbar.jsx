@@ -15,7 +15,7 @@ export default function Navbar() {
 	const navItems = [
 		{ name: "Home", href: "#home" },
 		{ name: "About", href: "#about" },
-		{ name: "Skills", href: "#skills" },
+		{ name: "Tech Stack", href: "#techStack" },
 		{ name: "Projects", href: "#projects" },
 		{ name: "Contact", href: "#contact" },
 	];
@@ -37,7 +37,7 @@ export default function Navbar() {
 					{/* Desktop Navigation */}
 					<nav className="hidden md:flex items-center gap-2">
 						{navItems.map((item, index) => (
-							<HashLink key={index} to={item.href} smooth className="text-sm font-medium transition-colors hover:text-primary hover-lift py-3 px-4 rounded-lg">
+							<HashLink key={index} to={item.href} smooth className="text-sm font-medium transition-colors hover:text-primary hover-lift py-3 px-4 rounded-xl">
 								{item.name}
 							</HashLink>
 						))}
