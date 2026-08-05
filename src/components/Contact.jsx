@@ -12,7 +12,7 @@ export default function Contact() {
 			icon: <FileText size={24} />,
 			name: "Resume",
 			value: "Download Resume",
-			link: "https://res.cloudinary.com/x17drr8r/image/upload/v1783706438/ida-bagus-alit-bhadra-yoga-resume.pdf",
+			link: "https://res.cloudinary.com/x17drr8r/image/upload/ida-bagus-alit-bhadra-yoga-resume.pdf",
 		},
 		{
 			icon: <MapPin size={24} />,

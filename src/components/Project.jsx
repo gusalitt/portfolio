@@ -8,42 +8,42 @@ export default function Project() {
 		{
 			name: "SIMPELMAS - Public Complaint System",
 			description: "A comprehensive public reporting platform featuring three-level user authentication (citizen, worker, admin). Includes file upload for evidence, real-time status tracking, and automated PDF report generation.",
-			image: "https://raw.githubusercontent.com/gusalitt/simpelmas/refs/heads/main/public/assets/img/preview.png",
+			image: "./assets/projects/simpelmas-preview.webp",
 			link: "https://github.com/gusalitt/simpelmas",
 			tags: ["PHP Native", "MySQL", "Tailwind CSS", "JavaScript"],
 		},
 		{
 			name: "SevaGent - AI Chatbot System",
 			description: "Team Project focused on building a modern chatbot application with automated token and context management for continuous AI responses. I contributed as a backend developer, managing API data flows and efficient Ollama model integration.",
-			image: "./assets/projects/sevagent-preview.png",
+			image: "./assets/projects/sevagent-preview.webp",
 			link: "https://github.com/VibeOps-Dev/SevaGent",
 			tags: ["Express.js", "Vue.js", "Ollama", "PostgreSQL", "UnoCSS"],
 		},
 		{
 			name: "SevaWash - Laundry Management System",
 			description: "Team project focused on managing laundry services and tracking order status with quick and efficient process. I contributed as a backend developer.",
-			image: "./assets/projects/sevawash-preview.png",
+			image: "./assets/projects/sevawash-preview.webp",
 			link: "https://github.com/VibeOps-Dev/SevaWash",
 			tags: ["React.js", "Laravel", "MySQL", "Tailwind CSS"],
 		},
 		{
 			name: "LibraryHub (JavaScript Version)",
 			description: "A modern library management web app built with the JavaScript stack, providing book browsing, reading, and management features with an improved UI and responsive design.",
-			image: "https://raw.githubusercontent.com/gusalitt/libraryhub/refs/heads/main/client/public/preview.png",
+			image: "./assets/projects/libraryhub-preview.webp",
 			link: "https://github.com/gusalitt/libraryhub",
 			tags: ["React", "Express", "Supabase (PostgreSQL)", "Tailwind CSS"],
 		},
 		{
 			name: "Counseling App",
 			description: "Web-based application for managing student counseling records and streamlining administrative workflows in schools.",
-			image: "https://raw.githubusercontent.com/gusalitt/app-bimbingan-konseling/refs/heads/main/public/assets/img/dashboard-view-in-light-mode.png",
+			image: "./assets/projects/counseling-app-preview.webp",
 			link: "https://github.com/gusalitt/app-bimbingan-konseling",
 			tags: ["CodeIgniter", "Tailwind CSS", "MySQL"],
 		},
 		{
 			name: "Library App (PHP Version)",
 			description: "A Simple Library system designed to handle book management, borrowing, and return tracking through a simple web interface.",
-			image: "https://raw.githubusercontent.com/gusalitt/Aplikasi-Perpustakaan/refs/heads/main/admin/assets/img/home_admin.png",
+			image: "./assets/projects/library-app-preview.webp",
 			link: "https://github.com/gusalitt/library-app",
 			tags: ["PHP Native", "CSS", "MySQL"],
 		},
@@ -65,9 +65,8 @@ export default function Project() {
 					{/* Project cards */}
 					{visibleProjects.map((project, index) => (
 						<Card key={index} className={`overflow-hidden hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-primary/5 to-background flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
-							<div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
-								<img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-								<div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+							<div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden group">
+								<img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
 							</div>
 
 							<CardContent className="md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
@@ -75,7 +74,7 @@ export default function Project() {
 								<p className="text-muted-foreground mb-4 leading-relaxed text-sm md:text-base">{project.description}</p>
 								<div className="flex flex-wrap gap-2 mb-4">
 									{project.tags.map((tag, idx) => (
-										<Badge key={idx} variant="secondary" className="border-primary/30 text-xs md:text-sm">
+										<Badge key={idx} variant="secondary" className="border-primary/10 text-xs">
 											{tag}
 										</Badge>
 									))}

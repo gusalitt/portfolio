@@ -31,14 +31,14 @@ export default function About() {
 				<div className="flex flex-col justify-center items-center gap-10 mb-12">
 					<div className="flex items-center justify-center">
 						<div className="relative w-[300px] h-[300px] md:w-[340px] md:h-[340px] rounded-full overflow-hidden shadow-lg">
-							<img src="./assets/img/about.png" alt="Developer working" className="w-full h-full object-cover" />
+							<img src="./assets/img/about.webp" alt="Gus Alit Profile Picture" className="w-full h-full object-cover" loading="eager" />
 						</div>
 					</div>
 
 					<div className="flex items-center justify-center text-center max-w-[60rem] mx-auto">
 						<div>
 							<p className="text-muted-foreground mb-4">
-								Hi, I’m <span className="font-bold text-foreground">Gus Alit</span>. I'm a Software and Game Development graduate from a vocational high school and I really like software development.
+								Hi, I’m <span className="font-bold text-foreground">Gus Alit</span>. I'm a Full-Stack Developer passionate about software development.
 							</p>
 							<p className="text-muted-foreground mb-4">
 								It all started with my curiosity, which grew into a passion for making easy-to-use, efficient, and nice-looking apps. I’m always excited to learn new things and improve my skills to keep up with changes in web technology.
