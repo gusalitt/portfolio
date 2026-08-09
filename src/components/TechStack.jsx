@@ -1,25 +1,26 @@
 import { Card, CardContent } from "./ui/Card";
+import TechIcon from "./TechIcon";
 
 export default function TechStack() {
 	const techStack = [
-		{ name: "HTML5", icon: "devicon-html5-plain colored" },
-		{ name: "CSS3", icon: "devicon-css3-plain colored" },
-		{ name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-		{ name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
-		{ name: "JavaScript", icon: "devicon-javascript-plain colored" },
-        { name: "TypeScript", icon: "devicon-typescript-plain colored" },
-		{ name: "React JS", icon: "devicon-react-plain colored" },
-		{ name: "Express JS", icon: "devicon-express-original colored" },
-		{ name: "Node JS", icon: "devicon-nodejs-plain colored" },
-		{ name: "Supabase", icon: "devicon-supabase-plain colored" },
-		{ name: "Axios", icon: "devicon-axios-plain colored" },
-		{ name: "Git", icon: "devicon-git-plain colored" },
-		{ name: "Figma", icon: "devicon-figma-plain colored" },
-		{ name: "PHP", icon: "devicon-php-plain colored" },
-		{ name: "CodeIgniter", icon: "devicon-codeigniter-plain colored" },
-		{ name: "Laravel", icon: "devicon-laravel-plain colored" },
-		{ name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
-		{ name: "MySQL", icon: "devicon-mysql-plain colored" },
+		{ name: "HTML5", icon: "html5" },
+		{ name: "CSS3", icon: "css3" },
+		{ name: "Bootstrap", icon: "bootstrap" },
+		{ name: "Tailwind CSS", icon: "tailwindcss" },
+		{ name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
+		{ name: "React JS", icon: "reactjs" },
+		{ name: "Express JS", icon: "express" },
+		{ name: "Node JS", icon: "nodejs" },
+		{ name: "Supabase", icon: "supabase" },
+		{ name: "Axios", icon: "axios" },
+		{ name: "Git", icon: "git" },
+		{ name: "Figma", icon: "figma" },
+		{ name: "PHP", icon: "php" },
+		{ name: "CodeIgniter", icon: "codeigniter" },
+		{ name: "Laravel", icon: "laravel" },
+		{ name: "MySQL", icon: "mysql" },
+		{ name: "PostgreSQL", icon: "postgresql" },
 	];
 
 	return (
@@ -32,7 +33,7 @@ export default function TechStack() {
 				<div className="flex flex-wrap w-full md:w-[80%] items-center justify-center gap-14">
 					{techStack.map((skill, index) => (
 						<div className="flex flex-col justify-content-center items-center">
-							<i className={`${skill.icon} text-5xl mb-3`}></i>
+                            <TechIcon name={skill.icon} alt={skill.name} />
 							<h3 className="font-medium text-sm">{skill.name}</h3>
 						</div>
 					))}

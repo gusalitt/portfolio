@@ -2,48 +2,54 @@ import { useState } from "react";
 import { Card, CardContent } from "./ui/Card";
 import Badge from "./ui/Badge";
 import Button from "./ui/Button";
+import simpelmasPreview from "../assets/projects/simpelmas-preview.webp";
+import sevagentPreview from "../assets/projects/sevagent-preview.webp";
+import sevawashPreview from "../assets/projects/sevawash-preview.webp";
+import libraryhubPreview from "../assets/projects/libraryhub-preview.webp";
+import counselingAppPreview from "../assets/projects/counseling-app-preview.webp";
+import libraryAppPreview from "../assets/projects/library-app-preview.webp";
 
 export default function Project() {
 	const projects = [
 		{
 			name: "SIMPELMAS - Public Complaint System",
 			description: "A comprehensive public reporting platform featuring three-level user authentication (citizen, worker, admin). Includes file upload for evidence, real-time status tracking, and automated PDF report generation.",
-			image: "./assets/projects/simpelmas-preview.webp",
+			image: simpelmasPreview,
 			link: "https://github.com/gusalitt/simpelmas",
 			tags: ["PHP Native", "MySQL", "Tailwind CSS", "JavaScript"],
 		},
 		{
 			name: "SevaGent - AI Chatbot System",
 			description: "Team Project focused on building a modern chatbot application with automated token and context management for continuous AI responses. I contributed as a backend developer, managing API data flows and efficient Ollama model integration.",
-			image: "./assets/projects/sevagent-preview.webp",
+			image: sevagentPreview,
 			link: "https://github.com/VibeOps-Dev/SevaGent",
 			tags: ["Express.js", "Vue.js", "Ollama", "PostgreSQL", "UnoCSS"],
 		},
 		{
 			name: "SevaWash - Laundry Management System",
 			description: "Team project focused on managing laundry services and tracking order status with quick and efficient process. I contributed as a backend developer.",
-			image: "./assets/projects/sevawash-preview.webp",
+			image: sevawashPreview,
 			link: "https://github.com/VibeOps-Dev/SevaWash",
 			tags: ["React.js", "Laravel", "MySQL", "Tailwind CSS"],
 		},
 		{
 			name: "LibraryHub (JavaScript Version)",
 			description: "A modern library management web app built with the JavaScript stack, providing book browsing, reading, and management features with an improved UI and responsive design.",
-			image: "./assets/projects/libraryhub-preview.webp",
+			image: libraryhubPreview,
 			link: "https://github.com/gusalitt/libraryhub",
 			tags: ["React", "Express", "Supabase (PostgreSQL)", "Tailwind CSS"],
 		},
 		{
 			name: "Counseling App",
 			description: "Web-based application for managing student counseling records and streamlining administrative workflows in schools.",
-			image: "./assets/projects/counseling-app-preview.webp",
+			image: counselingAppPreview,
 			link: "https://github.com/gusalitt/app-bimbingan-konseling",
 			tags: ["CodeIgniter", "Tailwind CSS", "MySQL"],
 		},
 		{
 			name: "Library App (PHP Version)",
 			description: "A Simple Library system designed to handle book management, borrowing, and return tracking through a simple web interface.",
-			image: "./assets/projects/library-app-preview.webp",
+			image: libraryAppPreview,
 			link: "https://github.com/gusalitt/library-app",
 			tags: ["PHP Native", "CSS", "MySQL"],
 		},
@@ -66,7 +72,13 @@ export default function Project() {
 					{visibleProjects.map((project, index) => (
 						<Card key={index} className={`overflow-hidden hover:shadow-2xl transition-all duration-500 border-0 bg-gradient-to-br from-primary/5 to-background flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
 							<div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden group">
-								<img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+								<img 
+                                    src={project.image} 
+                                    alt={project.name} 
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                    loading="lazy" 
+                                    decoding="async" 
+                                />
 							</div>
 
 							<CardContent className="md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
